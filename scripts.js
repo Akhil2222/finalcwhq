@@ -16,5 +16,5 @@ function checkTime(i) {
     return i;
 }
 
-
-
+var today = new Date()
+$('#date').text(`${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`)

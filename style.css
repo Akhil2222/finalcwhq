@@ -40,29 +40,7 @@ button:hover{
     margin: 0 20px;
 }
 
-#date{
-    position:absolute;
-    top:4vh;
-    left: 50px;
-    font-size: 20px;
-    border: 2px solid beige;
-    padding: 5px;
-    width: 120px;
-    border-radius: 5px;
 
-}
-
-#clock{
-    position:absolute;
-    top:4vh;
-    right: 50px;
-    font-size: 20px;
-    border: 2px solid beige;
-    padding: 5px;
-    width: 120px;
-    border-radius: 5px;
-
-}
 
 h1{
     margin: auto;
