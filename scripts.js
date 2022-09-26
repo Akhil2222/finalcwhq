@@ -9,6 +9,8 @@ function startTime() {
     s = checkTime(s);
     document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
     setTimeout(startTime, 1000);
+    $('#date').text(`${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`)
+
 }
 
 function checkTime(i) {
@@ -16,5 +18,12 @@ function checkTime(i) {
     return i;
 }
 
-var today = new Date()
-$('#date').text(`${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`)
+$('.container').css({
+    'width':innerWidth+'px',
+    "height":innerHeight+'px'
+})
+$('#notes').val(localStorage.getItem('notes'))
+$('.col').css({'height':(innerHeight-100)+'px'})
+$('#notesave').click(function(){
+    localStorage.setItem('notes',$('#notes').val())
+})
